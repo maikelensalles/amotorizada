@@ -39,7 +39,7 @@ export const ProductCard = ({ image, title, discount, link }: ProductCardProps) 
       {/* Conteúdo */}
       <div className="p-4 space-y-3">
         <h3
-          className="font-orbitron font-bold text-black/90 text-base sm:text-lg leading-snug
+          className="font-montserrat font-bold text-black/90 text-base sm:text-lg leading-snug
                      line-clamp-2 min-h-[2.5rem] sm:min-h-[3rem]"
           title={title}
         >

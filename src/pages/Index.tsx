@@ -31,7 +31,7 @@ const Index = () => {
             <span className="uppercase tracking-wider">Black Friday Antecipada</span>
           </div>
 
-          <h1 className="font-orbitron font-black leading-tight animate-fade-in text-[clamp(1.8rem,5.5vw,3.6rem)] sm:text-[clamp(2.2rem,5vw,4.2rem)]">
+          <h1 className="font-inter font-black leading-tight animate-fade-in text-[clamp(1.8rem,5.5vw,3.6rem)] sm:text-[clamp(2.2rem,5vw,4.2rem)]">
             <span className="text-racing-white">🚀 Black Friday Antecipada</span>
             <br />
             <span className="text-primary text-glow-orange">Até 50% OFF</span>
@@ -48,7 +48,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto bg-racing-black/80 backdrop-blur-md rounded-2xl p-6 border-2 border-primary shadow-2xl animate-fade-in">
             <div className="flex items-center justify-center gap-2 mb-4">
               <Clock className="w-6 h-6 text-primary" />
-              <h2 className="text-xl sm:text-2xl font-bold font-orbitron text-racing-white">⏰ Termina em</h2>
+              <h2 className="text-xl sm:text-2xl font-bold font-inter text-racing-white">⏰ Termina em</h2>
             </div>
             <div className="flex flex-wrap items-stretch justify-center gap-3 sm:gap-4">
               <CountdownTimer targetISO="2025-10-28T23:59:59-03:00" />
@@ -64,14 +64,14 @@ const Index = () => {
       <section className="bg-racing-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl sm:text-5xl font-black font-orbitron mb-4 text-racing-black">Produtos em Destaque</h2>
+            <h2 className="text-4xl sm:text-5xl font-black font-inter mb-4 text-racing-black">Produtos em Destaque</h2>
             <p className="text-xl text-racing-gray-light">Os mais vendidos com descontos imperdíveis</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 lg:gap-8 max-w-6xl mx-auto">
-            <ProductCard image={pneuPraieiro} title="Pneu Praieiro Aro 26 - Alta Performance" discount="-44%" link="https://shopee.com.br" />
-            <ProductCard image={bancoXr} title="Banco XR Esportivo - Conforto e Estilo" discount="-23%" link="https://shopee.com.br" />
-            <ProductCard image={escapeEsportivo} title="Escape Esportivo com Chamas 🔥" discount="-35%" link="https://shopee.com.br" />
+            <ProductCard image={escapeEsportivo} title="Descanso Apoio Central" discount="-50%" link="https://shopee.com.br/product/373745451/22092579317?channel_code=MyCollection&gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVHQ3ZkZSUTMrR3pBWmZZNzdrcnRBMzl3ODhDLzI1ZlFHamJqR2txdkR1ajZveHNxUU5sTmlkV1VzbU9CZXRCRWpzU1RhR3haV25KTEtZbTBhTXhMOEN4NGtlVXdNWEhkVkpDcExUTkJtTHBBZWt3OEFPa1BXUmViSFBIUjhJQmNlMEY3emxaWVV1U0V4TFlUMjRnaHBnPQ&uls_trackid=53vvg0bq00rd&utm_campaign=id_KIHVYbP8oI&utm_content=----&utm_medium=affiliates&utm_source=an_18314510086&utm_term=du3kyqsz3re3" />
+            <ProductCard image={pneuPraieiro} title="Pneu Praieiro Aro 26 - Alta Performance" discount="-44%" link="https://shopee.com.br/product/369650932/41007356503?channel_code=MyCollection&gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVHQ3ZkZSUTMrR3pBWmZZNzdrcnRBMWJFR05FcEVaai8vOGprUXlHZUtPRVBaRk5OdXpCNDkvQjJvV0c5OXZGS2kxZVg3aVZZWEtJQmh1dmNGWUQ2eVdpaUhZZXR1ejI5WTZWTVU3bjJsMlN0THVwYm5nWG5tS2g0RnN3S0xnK2kzM3U3dGYxU0tHcWs3REdQNjhNOGRjPQ&uls_trackid=53vvapsa00rr&utm_campaign=id_K6yxqKmtny&utm_content=----&utm_medium=affiliates&utm_source=an_18314510086&utm_term=du3gym3fa25d" />
+            <ProductCard image={bancoXr} title="Banco XR Esportivo - Conforto e Estilo" discount="-23%" link="https://shopee.com.br/product/1068161541/22097311841?channel_code=MyCollection&gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkWHlFU0hvQlZFVENpb1FnT09uNDlDSUJ5WXF0M1hibXZVc05TR2ZGbGpSV0lwc0NDQkVXZERvRU9YRWJwWk1hODBrQXl1YllKdG1TdDdlOGhYTDhDUDZSUDVmZ0xKcXc0aEpsbGVWaUFWQ053djNFUW5oeVd5WjFjNHFxQnowTnpkTlZVRjg4Z1FvMERXVFFTTStNMERBPQ&uls_trackid=53vvauch01r7&utm_campaign=id_IkgOE0dvok&utm_content=----&utm_medium=affiliates&utm_source=an_18314510086&utm_term=du3h3advpgjq" />
           </div>
         </div>
       </section>
@@ -88,7 +88,7 @@ const Index = () => {
                   <span>KIT COMPLETO</span>
                 </div>
 
-                <h2 className="text-4xl sm:text-5xl font-black font-orbitron mb-6 text-racing-white">Monte sua Motorizada 🔧</h2>
+                <h2 className="text-4xl sm:text-5xl font-black font-inter mb-6 text-racing-white">Monte sua Motorizada 🔧</h2>
 
                 <p className="text-lg text-racing-gray-light mb-6">
                   Garanta seu kit completo e receba um guia com o passo a passo para montar sua bike motorizada.
@@ -146,37 +146,61 @@ const Index = () => {
       </section>
 
       {/* PROVAS SOCIAIS */}
-      <section className="bg-racing-white py-20">
+      <section className="bg-racing-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-              <div className="flex flex-col items-center p-6">
-                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-4 glow-orange">
-                  <Users className="w-10 h-10 text-primary-foreground" />
+            {/* ⬇️ AQUI trocamos a grid */}
+            <div
+              className="
+                grid grid-cols-1
+                min-[360px]:grid-cols-3      /* 3 colunas já em telas >= 360px */
+                gap-3 sm:gap-8
+                text-center items-stretch
+              "
+            >
+              {/* card 1 */}
+              <div className="flex flex-col items-center p-3 sm:p-6">
+                <div className="w-12 h-12 sm:w-20 sm:h-20 bg-primary rounded-full flex items-center justify-center mb-3 sm:mb-4">
+                  <Users className="w-6 h-6 sm:w-10 sm:h-10 text-primary-foreground" />
                 </div>
-                <h3 className="text-3xl font-bold font-orbitron text-racing-black mb-2">300 mil</h3>
-                <p className="text-racing-gray-light">Seguidores confiando na marca</p>
+                <h3 className="text-lg sm:text-3xl font-black font-inter text-racing-black mb-1 sm:mb-2">
+                  300 mil
+                </h3>
+                <p className="text-xs sm:text-base text-racing-gray-light">
+                  Seguidores confiando na marca
+                </p>
               </div>
 
-              <div className="flex flex-col items-center p-6">
-                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-4 glow-orange">
-                  <Lock className="w-10 h-10 text-primary-foreground" />
+              {/* card 2 */}
+              <div className="flex flex-col items-center p-3 sm:p-6">
+                <div className="w-12 h-12 sm:w-20 sm:h-20 bg-primary rounded-full flex items-center justify-center mb-3 sm:mb-4">
+                  <Lock className="w-6 h-6 sm:w-10 sm:h-10 text-primary-foreground" />
                 </div>
-                <h3 className="text-3xl font-bold font-orbitron text-racing-black mb-2">100%</h3>
-                <p className="text-racing-gray-light">Pagamento seguro pela Shopee</p>
+                <h3 className="text-lg sm:text-3xl font-clack font-inter text-racing-black mb-1 sm:mb-2">
+                  100%
+                </h3>
+                <p className="text-xs sm:text-base text-racing-gray-light">
+                  Pagamento seguro pela Shopee
+                </p>
               </div>
 
-              <div className="flex flex-col items-center p-6">
-                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-4 glow-orange">
-                  <Package className="w-10 h-10 text-primary-foreground" />
+              {/* card 3 */}
+              <div className="flex flex-col items-center p-3 sm:p-6">
+                <div className="w-12 h-12 sm:w-20 sm:h-20 bg-primary rounded-full flex items-center justify-center mb-3 sm:mb-4">
+                  <Package className="w-6 h-6 sm:w-10 sm:h-10 text-primary-foreground" />
                 </div>
-                <h3 className="text-3xl font-bold font-orbitron text-racing-black mb-2">Rápida</h3>
-                <p className="text-racing-gray-light">Entrega em todo o Brasil</p>
+                <h3 className="text-lg sm:text-3xl font-black font-inter text-racing-black mb-1 sm:mb-2">
+                  Rápida
+                </h3>
+                <p className="text-xs sm:text-base text-racing-gray-light">
+                  Entrega em todo o Brasil
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* SOBRE O CRIADOR */}
       <section className="bg-racing-white py-20 border-t-4 border-racing-black">
@@ -188,8 +212,8 @@ const Index = () => {
               </div>
 
               <div>
-                <h2 className="text-4xl sm:text-5xl font-black font-orbitron mb-4 text-racing-black">Sobre o Criador</h2>
-                <h3 className="text-2xl font-bold text-primary mb-4">Guilherme Salles</h3>
+                <h2 className="text-4xl sm:text-5xl font-black font-inter mb-4 text-racing-black">Sobre o Criador</h2>
+                <h3 className="font-montserrat text-2xl font-black text-primary mb-4">Guilherme Salles</h3>
                 <p className="text-lg text-racing-gray-light mb-6">
                   Fundador da <strong className="text-racing-black">@amotorizada_brasil</strong>, com mais de 300 mil seguidores nas redes sociais. Especialista em bikes motorizadas e apaixonado por alta performance.
                 </p>
@@ -214,7 +238,7 @@ const Index = () => {
               <Shield className="w-5 h-5" />
               <span className="uppercase tracking-wider">Grupo Exclusivo</span>
             </div>
-            <h2 className="text-4xl sm:text-5xl font-black font-orbitron mb-6 text-racing-white">🚨 Grupo VIP Black Friday</h2>
+            <h2 className="text-4xl sm:text-5xl font-black font-inter mb-6 text-racing-white">🚨 Grupo VIP Black Friday</h2>
             <p className="text-xl text-racing-gray-light mb-8">
               Entre no grupo e receba cupons exclusivos antes de todo mundo! Ofertas relâmpago, lançamentos em primeira mão e muito mais.
             </p>
@@ -232,8 +256,8 @@ const Index = () => {
             <img src={logoAmotorizada} alt="Amotorizada Brasil" className="w-20 h-20 object-contain" />
             <div className="flex gap-8 text-racing-white">
               <a href="https://instagram.com/amotorizada_brasil" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Instagram</a>
-              <a href="https://shopee.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Shopee</a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">YouTube</a>
+              <a href="https://collshp.com/amotorizadabrasil?fbclid=PAZXh0bgNhZW0CMTEAAaeWrDNaFgAomkQ1O5m6k3UFKpJ7MYmo2siAt2VtCHN1ITUjA1exb2FDH4hbOw_aem_GClo2jkaY2SXTtXWjUTg1g" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Shopee</a>
+              <a href="https://www.youtube.com/@amotorizadabrasil" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">YouTube</a>
             </div>
             <p className="text-racing-gray-light text-center text-sm">© 2025 Amotorizada Brasil. Todos os direitos reservados.</p>
           </div>

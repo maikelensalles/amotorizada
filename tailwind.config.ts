@@ -18,6 +18,8 @@ export default {
     extend: {
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
+        anton: ["Anton", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
         inter: ['Inter', 'sans-serif'],
       },
       colors: {
