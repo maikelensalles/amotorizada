@@ -31,13 +31,13 @@ const Index = () => {
             <span className="uppercase tracking-wider">Black Friday Antecipada</span>
           </div>
 
-          <h1 className="font-inter font-black leading-tight animate-fade-in text-[clamp(1.8rem,5.5vw,3.6rem)] sm:text-[clamp(2.2rem,5vw,4.2rem)]">
+          <h1 className="font-inter mb-3 font-black leading-tight animate-fade-in text-[clamp(1.6rem,5.5vw,3.6rem)] sm:text-[clamp(2.2rem,5vw,4.2rem)]">
             <span className="text-racing-white">🚀 Black Friday Antecipada</span>
             <br />
             <span className="text-primary text-glow-orange">Até 50% OFF</span>
           </h1>
 
-          <p className="text-[clamp(.95rem,2.6vw,1.15rem)] sm:text-lg lg:text-xl text-racing-gray-light max-w-3xl mx-auto mb-8 animate-fade-in">
+          <p className="text-[clamp(.95rem,2.6vw,1.15rem)] sm:text-lg lg:text-xl text-racing-gray-light max-w-3xl mx-auto mb-3 animate-fade-in">
             A promoção começou antes! Aproveite as ofertas exclusivas da Shopee e turbine sua bike com estilo e segurança.
           </p>
 
