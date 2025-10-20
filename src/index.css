@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design System - Amotorizada Brasil - Black Friday Theme
+   All colors MUST be HSL. Orange racing theme with black/white contrast.
+*/
+*, *::before, *::after { box-sizing: border-box; }
+img { display: block; max-width: 100%; height: auto; }
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    /* Racing Orange - Primary Brand Color */
+    --primary: 24 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 24 100% 60%;
+    
+    /* Black Racing Theme */
+    --secondary: 0 0% 9%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Red Racing Accent */
+    --accent: 0 84% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 89%;
+    --input: 0 0% 89%;
+    --ring: 24 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom Racing Colors */
+    --racing-black: 0 0% 0%;
+    --racing-white: 0 0% 100%;
+    --racing-orange: 24 100% 50%;
+    --racing-orange-light: 24 100% 60%;
+    --racing-red: 0 84% 60%;
+    --racing-gray: 0 0% 20%;
+    --racing-gray-light: 0 0% 46%;
+    
+    /* Gradients */
+    --gradient-fire: linear-gradient(135deg, hsl(0, 84%, 60%), hsl(24, 100%, 50%), hsl(45, 100%, 50%));
+    --gradient-racing: linear-gradient(135deg, hsl(0, 0%, 0%), hsl(0, 0%, 20%));
+    --gradient-orange: linear-gradient(135deg, hsl(24, 100%, 50%), hsl(24, 100%, 60%));
+    
+    /* Shadows */
+    --shadow-glow-orange: 0 0 40px hsla(24, 100%, 50%, 0.6);
+    --shadow-glow-red: 0 0 40px hsla(0, 84%, 60%, 0.5);
+    --shadow-intense: 0 20px 60px -15px hsla(0, 0%, 0%, 0.8);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 24 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 84% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 24 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  /* Racing Gradients */
+  .bg-gradient-fire {
+    background: var(--gradient-fire);
+  }
+  
+  .bg-gradient-racing {
+    background: var(--gradient-racing);
+  }
+  
+  .bg-gradient-orange {
+    background: var(--gradient-orange);
+  }
+  
+  /* Glow Effects */
+  .glow-orange {
+    box-shadow: var(--shadow-glow-orange);
+  }
+  
+  .glow-red {
+    box-shadow: var(--shadow-glow-red);
+  }
+  
+  .text-glow-orange {
+    text-shadow: 0 0 20px hsla(24, 100%, 50%, 0.8);
+  }
+  
+  .text-glow-red {
+    text-shadow: 0 0 20px hsla(0, 84%, 60%, 0.6);
+  }
+  
+  /* Pulse Animation */
+  .pulse-glow {
+    animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsla(24, 100%, 50%, 0.6);
+    }
+    50% {
+      box-shadow: 0 0 40px hsla(24, 100%, 50%, 1);
+    }
+  }
+  
+  /* Fire Animation */
+  .fire-flicker {
+    animation: fire-flicker 0.3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes fire-flicker {
+    0% {
+      opacity: 1;
+      filter: brightness(1);
+    }
+    100% {
+      opacity: 0.9;
+      filter: brightness(1.2);
+    }
+  }
+}
